@@ -1,0 +1,26 @@
+version: "3.2"
+services:
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+     - 5500:1433
+    environment:
+     - ACCEPT_EULA=Y
+     - MSSQL_PID=Standard
+     - SA_PASSWORD=123456789Zz.
+     - MSSQL_AGENT_ENABLED=true
+
+  boyner-case:
+    image: ahmetfurkandemir/boyner-case-java:tagname
+    ports:
+     - 8080:8080
+    depends_on:
+      - sqlserver
+    build:
+      context: .
+
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:sqlserver://sqlserver:1433;databaseName=tempdb;encrypt=true;trustServerCertificate=true;authenticationScheme=NTLM
+
+    restart: on-failure
