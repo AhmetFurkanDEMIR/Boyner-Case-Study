@@ -56,7 +56,7 @@ Docker imajlarını ayağa kaldırdıktan sonra [http://localhost:8080/api/](htt
 
 **tbl_product_category** tablosunda isim ile kategori arama⇂
 [http://localhost:8080/api/PrCategoryName](http://localhost:8080/api/PrCategoryName)
-```json
+```
 http://localhost:8080/api/PrCategoryName?name=TshortCategory
 ```
 ![Screenshot_2022-06-01_13-58-34](https://user-images.githubusercontent.com/54184905/171389367-072b4afa-18a6-4a8e-ae1f-0eea514a51c8.png)
@@ -78,7 +78,7 @@ http://localhost:8080/api/PrCategoryName?name=TshortCategory
 
 **tbl_product_category** tablosunda id ile bağlı tüm tablolara soft delete yapma⇂
 [http://localhost:8080/api/deleteProductCategory](http://localhost:8080/api/deleteProductCategory)
-```json
+```
 http://localhost:8080/api/deleteProductCategory?id=1
 ```
 ![Screenshot_2022-06-01_15-01-34](https://user-images.githubusercontent.com/54184905/171399798-e4a78f55-4182-4a22-8cd2-961db4612cec.png)
@@ -115,21 +115,21 @@ http://localhost:8080/api/deleteProductCategory?id=1
 
 **tbl_product** tablosunda name ile item arama⇂
 [http://localhost:8080/api/productName](http://localhost:8080/api/productName)
-```json
+```
 http://localhost:8080/api/productName?name=Boyner Tshort
 ```
 ![Screenshot_2022-06-01_14-36-43](https://user-images.githubusercontent.com/54184905/171395606-75d6be81-82ba-4094-a8d6-6b76a091521e.png)
 
 **tbl_product** tablosunda CategoryName ile item arama⇂
 [http://localhost:8080/api/productCategoryName](http://localhost:8080/api/productCategoryName)
-```json
+```
 http://localhost:8080/api/productCategoryName?name=TshortCategory NEW
 ```
 ![Screenshot_2022-06-01_14-38-22](https://user-images.githubusercontent.com/54184905/171396014-e22e6196-69e5-4507-ade3-1b129e433693.png)
 
 **tbl_product** tablosunda PriceRange ile item arama⇂
 [http://localhost:8080/api/productPriceRange](http://localhost:8080/api/productPriceRange)
-```json
+```
 http://localhost:8080/api/productPriceRange?start=98.8&finish=100
 ```
 ![Screenshot_2022-06-01_14-41-13](https://user-images.githubusercontent.com/54184905/171396423-10acefd8-8ab3-423d-aa0a-e1cfdc5893d0.png)
@@ -153,7 +153,7 @@ http://localhost:8080/api/productPriceRange?start=98.8&finish=100
 
 **tbl_product** tablosunda id ile item silme⇂
 [http://localhost:8080/api/deleteProduct](http://localhost:8080/api/deleteProduct)
-```json
+```
 http://localhost:8080/api/deleteProduct?id=1
 ```
 ![Screenshot_2022-06-01_14-47-56](https://user-images.githubusercontent.com/54184905/171397648-555094a6-4592-41de-a756-77653752e871.png)
